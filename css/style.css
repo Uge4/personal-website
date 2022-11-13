@@ -1,0 +1,237 @@
+html {
+    background-color: rgb(117, 27, 56);
+    margin: 0 auto;
+    align-items: center;
+    font-size: 1em !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    height: 100%;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    padding: 200px 0 20px 0;
+    vertical-align: bottom;
+    float: left;
+}
+
+h2, h3, h4, h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+
+header {
+    display: block;
+
+}
+
+
+/* buttons sections */
+
+.main-story {
+    display: inline;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+
+#future, #work, #experience {
+    display: inline;
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+#why:last-child {
+    float: left;
+    width: 20%;
+    height: 100%;
+
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    width: 100px;
+    height: 30px;
+    border-radius: 5%;
+    border-width: 3px;
+    border-color: whitesmoke;
+    padding: 5px 10px;
+    margin: 2%;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+header div.full-size {
+    /* display: block; */
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    color: rgb(72, 163, 202);
+}
+
+div.full-size h2 {
+    display: inline-block;
+    position: absolute;
+    right: 100%;
+    bottom: 100%;
+    color: rgb(35, 177, 167);
+}
+
+.logos {
+    height: 30px;
+    width: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+.right-bar {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    height: 90%;    
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+
+    .right-bar {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        height: 90%;
+        align-items: baseline;    
+    }   
+  }
+
+.coding-sites {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    
+}
+
+
+.resume {
+    display: block;
+    clear: both;
+    margin: 10px;
+}
+
+.guts {
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+
+form {
+    display: inline-block;   
+    margin: 10px; 
+    width: 250px;
+}
+
+
+#project {
+    display: block;
+
+}
+
+/* Forms */
+
+textarea#project, input[type=submit], input[type=text], input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  
+
+/* cool hover effect - https://codepen.io/argyleink/pen/poEjvpd */
+
+
+h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1 {
+    /* position: relative; */
+    font-size: 5rem;
+  }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+  
+  body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+  }
